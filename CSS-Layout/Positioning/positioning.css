@@ -1,0 +1,38 @@
+/* Positioning
+CSS positioning properties are used to position elements. */
+
+/* Static
+The default position; elements are positioned according to the normal flow of the document. */
+div {
+  position: static;
+}
+
+/* Relative
+Positioned relative to its normal position. */
+div {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+/* Absolute
+Positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). */
+div {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+/* Fixed
+Positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. */
+div {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Sticky
+A hybrid of relative and fixed positioning. The element is treated as relative positioned until it crosses a specified point, then it is treated as fixed positioned. */
+div {
+  position: sticky;
+  top: 0;
+}

@@ -1,0 +1,35 @@
+/* Selectors
+CSS selectors are used to "select" the HTML elements you want to style.
+ */
+
+/* Element Selector
+Selects all elements of a specified type. */
+p {
+  color: blue;
+}
+/* Class Selector
+Selects all elements with a specific class attribute. */
+.example {
+  color: red;
+}
+/* ID Selector
+Selects a single element with a specific id attribute. */
+#unique {
+  color: green;
+}
+
+/* Attribute Selector
+Selects elements with a specific attribute. */
+input[type="text"] {
+  border: 1px solid black;
+}
+/* Pseudo-class Selector
+Selects elements in a specific state. */
+a:hover {
+  color: orange;
+}
+/* Pseudo-element Selector
+Selects and styles a part of an element. */
+p::first-line {
+  font-weight: bold;
+}

@@ -1,0 +1,33 @@
+/* Display
+The display property specifies the display behavior of an element. */
+
+/* Block
+Displays an element as a block-level element (starts on a new line and takes up the full width). */
+div {
+    display: block;
+}
+/* Inline
+Displays an element as an inline-level element (does not start on a new line and only takes up as much width as necessary). */
+span {
+    display: inline;
+}
+/* Inline-block
+Displays an element as an inline-level block container (flows with text but has block-level properties). */
+img {
+    display: inline-block;
+}
+/* Flex
+Displays an element as a block-level flex container. */
+div {
+    display: flex;
+}
+/* Grid
+Displays an element as a block-level grid container. */
+div {
+    display: grid;
+}
+/* None
+Hides an element (it will not be displayed and not take up any space). */
+div {
+    display: none;
+}

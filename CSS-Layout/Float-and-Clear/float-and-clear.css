@@ -1,0 +1,12 @@
+/* Float
+Elements are floated horizontally, which means they can be moved to the left or right of their containing element. */
+
+img {
+    float: left;
+}
+
+/* Clear
+Specifies on which sides of an element floating elements are not allowed to float. */
+div {
+    clear: both;
+}

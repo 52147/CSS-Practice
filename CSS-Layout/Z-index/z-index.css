@@ -1,0 +1,7 @@
+/* Z-index
+The z-index property specifies the stack order of elements (which element should be on top when elements overlap). Higher numbers are in front of lower numbers. */
+
+div {
+  position: absolute;
+  z-index: 10;
+}

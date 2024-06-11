@@ -1,0 +1,24 @@
+/* Box Model
+The CSS box model describes the rectangular boxes generated for elements in the document tree and consists of: */
+
+/* Content
+The actual content of the box, where text and images appear. */
+div {
+    width: 300px;
+    height: 150px;
+}
+/* Padding
+The space between the content and the border. Padding is transparent. */
+div {
+    padding: 10px;
+}
+/* Border
+The border that goes around the padding (if any) and content. */
+div {
+    border: 1px solid black;
+}
+/* Margin
+The space outside the border. Margin is transparent. */
+div {
+    margin: 20px;
+}
