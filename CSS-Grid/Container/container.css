@@ -1,0 +1,37 @@
+/* ### Grid Container Properties
+
+1. **display: grid;**
+   - This property enables grid layout on the container. Without this, the container won't behave as a grid container. */
+
+/* 2. **grid-template-columns**
+   - Defines the columns of the grid with a space-separated list of values. The values represent the width of each column. Example: */
+
+grid-template-columns: 100px 200px auto;
+
+/* 3. **grid-template-rows**
+   - Similar to `grid-template-columns`, but for rows. It defines the height of each row. Example: */
+
+grid-template-rows: 50px 100px auto;
+
+/* 4. **grid-template-areas**
+   - Defines a grid template by referencing the names of the grid areas which are specified with the `grid-area` property on child elements. Example: */
+
+grid-template-areas:
+  "header header"
+  "sidebar content"
+  "footer footer";
+
+/* 5. **gap**
+   - Defines the size of the gap (gutter) between rows and columns. Can be set separately for rows and columns using `row-gap` and `column-gap`. Example: */
+
+gap: 10px 20px; /* 10px between rows, 20px between columns */
+
+/* 6. **justify-items**
+   - Aligns grid items along the inline (row) axis. Possible values: `start`, `end`, `center`, `stretch`. Example: */
+
+justify-items: center;
+
+/* 7. **align-items**
+   - Aligns grid items along the block (column) axis. Possible values: `start`, `end`, `center`, `stretch`. Example: */
+
+align-items: stretch;

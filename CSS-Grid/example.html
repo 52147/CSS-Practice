@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* First column takes 1 part, second column takes 2 parts */
+        grid-template-rows: auto 200px auto;
+        grid-template-areas:  /* website layout image*/
+          "header header"
+          "sidebar content"
+          "footer footer";
+        gap: 10px;
+        justify-items: stretch;
+        align-items: stretch;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: lightcoral;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        background-color: lightblue;
+      }
+
+      .content {
+        grid-area: content;
+        background-color: lightgreen;
+      }
+
+      .footer {
+        grid-area: footer;
+        background-color: lightgoldenrodyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">Header</div>
+      <div class="sidebar">Sidebar</div>
+      <div class="content">Content</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

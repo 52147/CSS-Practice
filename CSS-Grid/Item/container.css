@@ -1,0 +1,19 @@
+/* ### Grid Item Properties
+
+1. **grid-column**
+   - Specifies a grid item's start and end positions within the grid columns. Example: */
+     
+     grid-column: 1 / 3; /* Starts at column 1, ends at column 3 */
+     
+
+/* 2. **grid-row**
+   - Specifies a grid item's start and end positions within the grid rows. Example: */
+     
+     grid-row: 2 / 4; /* Starts at row 2, ends at row 4 */
+     
+
+/* 3. **grid-area**
+   - Specifies a grid item's area. It can be used in `grid-template-areas` to define the placement of the item. Example:
+     */
+     grid-area: header;
+     

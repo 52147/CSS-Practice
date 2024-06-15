@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 100px 100px 100px; /* Three columns of 100px each */
+      grid-template-rows: 100px 100px; /* Two rows of 100px each */
+      gap: 10px; /* 10px gap between cells */
+    }
+    /* matrix visualization*/
+/*    
+      x1   x2   x3   x4
+    y1 ---------------
+       | v |  v  | v  | 
+    y2 ----------------
+       |   |     |    | 
+    y3 ----------------
+*/
+    .item1 {
+      background-color: lightblue;
+      grid-column: 1 / 3;  /* Starts at vertical grid line x1, ends at vertical grid line x3 */
+      grid-row: 1 / 2; /* Starts at horizontal grid line y1, ends at horizontal grid line y2 */
+    }
+    
+
+    .item2 {
+      background-color: lightcoral;
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
+
+    .item3 {
+      background-color: lightgreen;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    .item4 {
+      background-color: lightgoldenrodyellow;
+      grid-column: 2 / 4;
+      grid-row: 2 / 3;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="item1">Item 1</div>
+    <div class="item2">Item 2</div>
+    <div class="item3">Item 3</div>
+    <div class="item4">Item 4</div>
+  </div>
+</body>
+</html>
