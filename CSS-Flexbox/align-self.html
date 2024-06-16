@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+      flex-direction: row; /* Main axis is horizontal */
+      align-items: flex-start; /* Align items at the start of the cross axis */
+      height: 300px; /* Set a height to see the effect of align-items */
+      border: 2px solid black;
+    }
+
+    .item {
+      background-color: lightblue;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #333;
+      flex: 0 0 100px; /* Fixed width and height for items */
+      height: 50px;
+    }
+
+    .item-special {
+      align-self: flex-end; /* Align this item at the end of the cross axis */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item item-special">Item 3</div> <!-- This item is aligned at the end -->
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+</body>
+</html>
+
+<!-- The align-self property in Flexbox allows individual flex items to override the container's align-items property for their own alignment along the cross axis. This means you can align specific items differently from the others within the same flex container.
+
+align-self Property
+Possible Values:
+
+auto: Inherits the value of the align-items property from its parent (default).
+flex-start: Aligns the item at the start of the cross axis.
+flex-end: Aligns the item at the end of the cross axis.
+center: Aligns the item in the center of the cross axis.
+baseline: Aligns the item such that its baseline aligns with the baselines of other flex items.
+stretch: Stretches the item to fill the container (default if align-items is not set to stretch).
+Example with align-self: flex-end
+Here's an example to demonstrate how align-self: flex-end works: -->
+<!-- Explanation
+Container:
+
+display: flex;: Enables Flexbox on the container.
+flex-wrap: wrap;: Allows items to wrap onto multiple lines.
+flex-direction: row;: Sets the main axis to be horizontal.
+align-items: flex-start;: Aligns all items at the start of the cross axis (top of the container).
+Items:
+
+.item: General styles for flex items with fixed width (100px) and height (50px).
+.item-special: This item has align-self: flex-end;, which aligns it at the end of the cross axis (bottom of the container), overriding the align-items: flex-start; property set on the container.
+Visualizing the Example
+In this example, most items will be aligned at the top of the container due to align-items: flex-start;. However, the item with the class .item-special (Item 3) will be aligned at the bottom of the container because of align-self: flex-end;.
+
+Item 1: Aligned at the top.
+Item 2: Aligned at the top.
+Item 3: Aligned at the bottom (due to align-self: flex-end;).
+Item 4: Aligned at the top.
+Item 5: Aligned at the top.
+Item 6: Aligned at the top.
+Summary
+align-self allows individual flex items to override the align-items property.
+Use align-self to control the alignment of specific items within the flex container.
+align-self values include auto, flex-start, flex-end, center, baseline, and stretch.
+By using align-self, you can achieve more flexible and customized layouts within a Flexbox container. -->

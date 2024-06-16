@@ -1,7 +1,7 @@
 /* ### Flexbox Item Properties
 
 1. **order**
-   - Controls the order in which flex items appear in the flex container. Items are laid out in ascending order of the `order` value. Possible values are any integer (default is 0).
+   - Controls the visual order in which flex items appear in the flex container. Items are laid out in ascending order of the `order` value. Possible values are any integer (default is 0).
    - Example: */
 
      .item {

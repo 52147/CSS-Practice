@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+      flex-direction: row; /* Main axis is horizontal */
+      align-content: space-around; /* Aligns flex lines along the cross axis */
+      height: 300px; /* Set a height to see the effect of align-content */
+      border: 2px solid black;
+    }
+
+    .item {
+      background-color: lightblue;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #333;
+      flex: 0 0 100px; /* Fixed width and height for items */
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+</body>
+</html>
+
+
+<!-- In Flexbox, "flex lines" refer to the lines formed by wrapping flex items within a flex container. When the flex-wrap property is used, items that do not fit within a single line of the container will wrap onto a new line, forming multiple flex lines. Each line of wrapped items is considered a flex line.
+
+Understanding Flex Lines
+Single-line Flex Container:
+
+If flex-wrap is set to nowrap (the default), all flex items will be arranged in a single line, regardless of how many items there are.
+There is only one flex line in this case.
+Multi-line Flex Container:
+
+If flex-wrap is set to wrap or wrap-reverse, flex items will wrap onto multiple lines as needed.
+Multiple flex lines are formed when items wrap.
+Properties Influencing Flex Lines
+flex-wrap:
+
+nowrap: All flex items are in a single line.
+wrap: Flex items wrap onto multiple lines from top to bottom (or left to right in a column direction).
+wrap-reverse: Flex items wrap onto multiple lines from bottom to top (or right to left in a column direction).
+align-content:
+
+Used to align multiple flex lines along the cross axis when there is extra space in the container. This property has no effect when there is only one line of flex items. -->
+
+
+<!-- Explanation
+Container:
+
+display: flex;: Enables Flexbox on the container.
+flex-wrap: wrap;: Allows items to wrap onto multiple lines, forming flex lines.
+flex-direction: row;: Sets the main axis to be horizontal.
+align-content: space-around;: Distributes the flex lines with equal space around them along the cross axis.
+height: 300px;: Sets a fixed height to see the effect of align-content.
+Items:
+
+.item: Each flex item has a fixed width (100px) and height (50px), so they wrap to the next line when they exceed the container's width.
+Visualizing Flex Lines
+With the given styles, the flex container will have multiple lines of items (flex lines) due to the flex-wrap: wrap; property. Here's how the items will be arranged:
+
+First Line:
+
+Item 1, Item 2, Item 3
+Second Line:
+
+Item 4, Item 5, Item 6
+The align-content: space-around; property will ensure that these two lines are distributed with equal space around them along the vertical (cross) axis.
+
+Key Points
+Single Flex Line: All items are on one line, controlled by align-items for cross-axis alignment.
+Multiple Flex Lines: Items wrap onto new lines, controlled by align-content for cross-axis alignment of the lines themselves.
+By using flex-wrap, you can create multiple flex lines, and by using align-content, you can control how these lines are distributed and aligned within the flex container. -->
