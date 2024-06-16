@@ -1,0 +1,26 @@
+
+/* ### Responsive Design
+Responsive design is an approach to web design that makes web pages render well on various devices and window or screen sizes. 
+
+### Media Queries
+Media queries allow you to apply CSS styles depending on the conditions such as screen size, resolution, or orientation.
+
+- **@media rule**: Used to define a block of CSS rules that apply only under certain conditions. */
+  @media (condition) {
+    /* CSS rules */
+  }
+/* - **min-width**: Applies styles when the viewport width is greater than or equal to a specified value. */
+  @media (min-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+/* - **max-width**: Applies styles when the viewport width is less than or equal to a specified value. */
+  @media (max-width: 600px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+
+
+

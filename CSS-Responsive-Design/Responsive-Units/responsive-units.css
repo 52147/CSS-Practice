@@ -1,0 +1,11 @@
+/* ### Responsive Units
+Responsive units adjust the size relative to the root element or their parent element.
+
+- **rem (root em)**: Relative to the font-size of the root element (usually the `<html>` element). */
+.element {
+    font-size: 2rem; /* 2 times the root element font-size */
+  }
+/* - **em**: Relative to the font-size of the parent element. */
+  .element {
+    font-size: 2em; /* 2 times the parent element font-size */
+  }

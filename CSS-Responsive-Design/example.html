@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Example</title>
+    <style>
+        /* Base styles (mobile-first approach) */
+        body {
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            padding: 1rem;
+        }
+
+        .box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Media query for tablets (min-width: 600px) */
+        @media (min-width: 600px) {
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+
+            .box {
+                width: 48%; /* Use viewport width units */
+                margin-bottom: 2rem; /* Use responsive units */
+            }
+        }
+
+        /* Media query for desktops (min-width: 992px) */
+        @media (min-width: 992px) {
+            .box {
+                width: 30%; /* Use viewport width units */
+                margin-bottom: 2rem; /* Use responsive units */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Design Example</h1>
+    </header>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+        <div class="box">Box 6</div>
+    </div>
+</body>
+</html>
+<!-- Sure, here's an example of a responsive design using media queries, viewport units, responsive units, and a mobile-first approach:
+
+Explanation:
+Base Styles (Mobile-First):
+
+Default styles for the body, header, and boxes are set for mobile devices.
+Media Queries:
+
+Tablets (min-width: 600px): Changes the layout to a flexible, two-column grid using flex and flex-wrap. Each .box takes up 48% of the container width and uses vw units for margins.
+Desktops (min-width: 992px): Changes the layout to a flexible, three-column grid. Each .box takes up 30% of the container width.
+Viewport Units:
+
+vw units are used to set the width of .box elements.
+Responsive Units:
+
+rem units are used for padding and margins to ensure consistency relative to the root font size.
+Mobile-First Approach:
+The design starts with mobile styles and progressively adds styles for larger screens using media queries. This ensures the website is optimized for mobile devices first, providing a good user experience across all devices. -->

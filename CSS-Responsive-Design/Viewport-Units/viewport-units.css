@@ -1,0 +1,21 @@
+/* ### Viewport Units
+Viewport units are relative to the size of the viewport (browser window).
+
+- **vw (viewport width)**: 1vw is 1% of the viewport’s width.
+- **vh (viewport height)**: 1vh is 1% of the viewport’s height. */
+  .element {
+    width: 50vw;
+    height: 50vh;
+  }
+
+/* ### Responsive Units
+Responsive units adjust the size relative to the root element or their parent element.
+
+- **rem (root em)**: Relative to the font-size of the root element (usually the `<html>` element). */
+  .element {
+    font-size: 2rem; /* 2 times the root element font-size */
+  }
+/* - **em**: Relative to the font-size of the parent element. */
+  .element {
+    font-size: 2em; /* 2 times the parent element font-size */
+  }
