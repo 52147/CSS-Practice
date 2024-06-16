@@ -1,0 +1,76 @@
+/* ### Flexbox Container Properties
+
+1. **display: flex;**
+   - This property enables Flexbox on the container. Without this, the container won't behave as a flex container. */
+
+/* 2. **flex-direction**
+   - Defines the direction in which the flex items are placed in the flex container. Possible values:
+     - `row` (default): left to right in a horizontal direction.
+     - `row-reverse`: right to left in a horizontal direction.
+     - `column`: top to bottom in a vertical direction.
+     - `column-reverse`: bottom to top in a vertical direction.
+   - Example: */
+
+     .container {
+       flex-direction: row;
+     }
+
+
+/* 3. **flex-wrap**
+   - Specifies whether the flex items should wrap or not when they overflow the container. Possible values:
+     - `nowrap` (default): all flex items will be on one line.
+     - `wrap`: flex items will wrap onto multiple lines from top to bottom.
+     - `wrap-reverse`: flex items will wrap onto multiple lines from bottom to top.
+   - Example: */
+
+     .container {
+       flex-wrap: wrap;
+     }
+
+/* 4. **justify-content**
+   - Defines how the browser distributes space between and around content items along the main axis. Possible values:
+     - `flex-start` (default): items are packed toward the start of the flex-direction.
+     - `flex-end`: items are packed toward the end of the flex-direction.
+     - `center`: items are centered along the main axis.
+     - `space-between`: items are evenly distributed; the first item is at the start, the last item is at the end.
+     - `space-around`: items are evenly distributed with equal space around them.
+     - `space-evenly`: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+   - Example: */
+
+     .container {
+       justify-content: center;
+     }
+
+/* 5. **align-items**
+   - Defines the default behavior for how flex items are laid out along the cross axis. Possible values:
+     - `stretch` (default): stretch to fill the container.
+     - `flex-start`: align items at the start of the cross axis.
+     - `flex-end`: align items at the end of the cross axis.
+     - `center`: align items in the center of the cross axis.
+     - `baseline`: align items such that their baselines align.
+   - Example: */
+
+     .container {
+       align-items: center;
+     }
+
+
+/* 6. **align-content**
+   - Aligns a flex container's lines within when there is extra space in the cross axis, similar to how `justify-content` aligns individual items within the main axis. This property has no effect when the flexbox has only one line. Possible values:
+     - `stretch` (default): stretch to fill the container.
+     - `flex-start`: lines packed to the start of the flex container.
+     - `flex-end`: lines packed to the end of the flex container.
+     - `center`: lines packed to the center of the flex container.
+     - `space-between`: lines evenly distributed; the first line is at the start, the last line is at the end.
+     - `space-around`: lines evenly distributed with equal space around them.
+     - `space-evenly`: lines are evenly distributed with equal space between them.
+   - Example: */
+
+     .container {
+       align-content: space-around;
+     }
+
+
+
+
+

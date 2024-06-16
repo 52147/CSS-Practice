@@ -1,0 +1,45 @@
+/* ### Flexbox Item Properties
+
+1. **order**
+   - Controls the order in which flex items appear in the flex container. Items are laid out in ascending order of the `order` value. Possible values are any integer (default is 0).
+   - Example: */
+
+     .item {
+       order: 1;
+     }
+
+
+/* 2. **flex-grow**
+   - Defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up. Default is 0 (do not grow).
+   - Example:
+     */
+     .item {
+       flex-grow: 2; /* The item will grow to take twice the amount of available space as an item with flex-grow: 1 */
+     }
+
+
+/* 3. **flex-shrink**
+   - Defines the ability for a flex item to shrink if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the overflow space inside the flex container the item should give up. Default is 1 (shrink if necessary).
+   - Example: */
+
+     .item {
+       flex-shrink: 0; /* The item will not shrink */
+     }
+
+
+/* 4. **flex-basis**
+   - Defines the default size of an element before the remaining space is distributed. It can be a length (e.g., 20%, 5rem) or `auto`. Default is `auto`.
+   - Example: */
+ 
+     .item {
+       flex-basis: 100px; /* The item will start with a width of 100px before space is distributed */
+     }
+
+
+/* 5. **align-self**
+   - Allows the default alignment (or the one specified by `align-items`) to be overridden for individual flex items. Possible values are the same as those for `align-items`: `auto`, `flex-start`, `flex-end`, `center`, `baseline`, and `stretch`. Default is `auto`.
+   - Example: */
+
+     .item {
+       align-self: flex-end;
+     }

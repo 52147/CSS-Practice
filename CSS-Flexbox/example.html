@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      align-content: stretch;
+      height: 400px; /* Added height to see the effect of align-content */
+    }
+
+    .item {
+      background-color: lightblue;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #333;
+    }
+
+    .item1 {
+      order: 2;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 100px;
+      align-self: flex-start;
+    }
+
+    .item2 {
+      order: 1;
+      flex-grow: 2;
+      flex-shrink: 1;
+      flex-basis: 200px;
+      align-self: flex-end;
+    }
+
+    .item3 {
+      order: 3;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 150px;
+      align-self: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item1">Item 1</div>
+    <div class="item item2">Item 2</div>
+    <div class="item item3">Item 3</div>
+  </div>
+</body>
+</html>
+
+
+<!-- ### Explanation of the Example
+
+- **Container**:
+  - `display: flex;`: Enables Flexbox on the container.
+  - `flex-direction: row;`: Sets the main axis direction to row (left to right).
+  - `flex-wrap: wrap;`: Allows items to wrap onto multiple lines.
+  - `justify-content: space-between;`: Distributes space between items with the first item at the start and the last item at the end.
+  - `align-items: center;`: Aligns items along the cross axis in the center.
+  - `align-content: stretch;`: Stretches lines to fill the container.
+
+- **Items**:
+  - **Item 1**:
+    - `order: 2;`: Places this item second in the visual order.
+    - `flex-grow: 1;`: Allows the item to grow by 1 unit.
+    - `flex-shrink: 1;`: Allows the item to shrink by 1 unit.
+    - `flex-basis: 100px;`: Sets the base size of the item to 100px.
+    - `align-self: flex-start;`: Aligns the item to the start of the cross axis.
+  - **Item 2**:
+    - `order: 1;`: Places this item first in the visual order.
+    - `flex-grow: 2;`: Allows the item to grow by 2 units.
+    - `flex-shrink: 1;`: Allows the item to shrink by 1 unit.
+    - `flex-basis: 200px;`: Sets the base size of the item to 200px.
+    - `align-self: flex-end;`: Aligns the item to the end of the cross axis.
+  - **Item 3**:
+    - `order: 3;`: Places this item third in the visual order.
+    - `flex-grow: 1;`: Allows the item to grow by 1 unit.
+    - `flex-shrink: 1;`: Allows the item to shrink by 1 unit.
+    - `flex-basis: 150px;`: Sets the base size of the item to 150px.
+    - `align-self: center;`: Aligns the
+
+ item to the center of the cross axis. -->
