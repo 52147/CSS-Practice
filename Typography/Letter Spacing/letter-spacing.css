@@ -1,0 +1,8 @@
+/* Letter Spacing
+Adjusts the space between characters. */
+h1 {
+    letter-spacing: 2px; /* Increase space between letters */
+}
+p.tight {
+    letter-spacing: -1px; /* Decrease space between letters */
+}

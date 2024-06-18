@@ -1,0 +1,11 @@
+/* Font Weight
+Determines the thickness of the text. Common values are normal, bold, bolder, lighter, or numeric values ranging from 100 to 900. */
+h1 {
+    font-weight: bold; /* Predefined keyword */
+}
+h2 {
+    font-weight: 700; /* Numeric value */
+}
+p {
+    font-weight: lighter; /* Lighter than the normal weight */
+}

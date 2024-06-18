@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unitless Line Height Example</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 1.6; /* Unitless value */
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            line-height: 1.2; /* Unitless value */
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.5; /* Unitless value */
+        }
+    </style>
+</head>
+<body>
+    <h1>Unitless Line Height Example</h1>
+    <p>This paragraph uses a unitless value for <code>line-height</code>, which means the line height is 1.5 times the font size of this paragraph. This approach ensures consistent spacing across different font sizes.</p>
+    <p>When the font size changes, the line height scales proportionally, maintaining a consistent vertical rhythm. This is particularly useful for responsive designs where text size might vary depending on the screen size or device.</p>
+</body>
+</html>
+
+
+<!-- In CSS, a unitless value is a numerical value that is not followed by a specific unit (such as px, em, %, etc.). It is often used in certain CSS properties where the context of the value inherently determines its meaning. A common example is the line-height property.
+
+Unitless Values in CSS
+Line Height
+When specifying line-height, using a unitless value means it will be multiplied by the element's font size to determine the actual line height. This approach ensures that the line height scales proportionally with the font size, making it easier to maintain consistent vertical rhythm across different elements.
+
+p {
+    font-size: 16px;
+    line-height: 1.5; /* 1.5 times the font size, which is 24px in this case */
+}
+In the above example, the actual line height will be 1.5 * 16px = 24px.
+
+Benefits of Using Unitless Values
+Scalability: When using unitless values for line-height, the spacing between lines will automatically adjust if the font size changes, maintaining a consistent look.
+Inheritance: Unitless values are inherited more predictably. For instance, a child element will inherit a line height that scales with its own font size, rather than the parent's. -->
+
+<!-- In this example:
+
+The line-height for the body is set to 1.6, meaning the line height will be 1.6 times the current font size.
+The line-height for the h1 element is set to 1.2, so it will be 1.2 times its font size.
+The line-height for the p element is set to 1.5, so it will be 1.5 times its font size. -->

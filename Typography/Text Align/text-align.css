@@ -1,0 +1,11 @@
+/* Text Align
+Specifies the horizontal alignment of text. */
+p {
+    text-align: left; /* Align text to the left */
+}
+h1 {
+    text-align: center; /* Center the text */
+}
+div {
+    text-align: justify; /* Justify the text */
+}

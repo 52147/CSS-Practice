@@ -1,0 +1,12 @@
+/* Typography
+Font Families
+Defines the typeface for text. Common font families include serif, sans-serif, monospace, cursive, and fantasy. */
+body {
+    font-family: 'Arial', sans-serif; /* Primary font and fallback */
+}
+h1 {
+    font-family: 'Times New Roman', serif;
+}
+code {
+    font-family: 'Courier New', monospace;
+}

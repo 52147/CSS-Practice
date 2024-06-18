@@ -1,0 +1,8 @@
+/* Word Spacing
+Adjusts the space between words. */
+p {
+    word-spacing: 5px; /* Increase space between words */
+}
+p.tight {
+    word-spacing: -2px; /* Decrease space between words */
+}

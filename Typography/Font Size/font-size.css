@@ -1,0 +1,13 @@
+/* Font Size
+Specifies the size of the font. Can be set in absolute units (px, pt) or relative units (em, rem, %). */
+p {
+    font-size: 16px; /* Absolute size */
+}
+h1 {
+    font-size: 2em; /* Relative to parent element */
+}
+body {
+    font-size: 100%; /* Relative to the root element */
+}
+
+

@@ -1,0 +1,11 @@
+/* Text Transform
+Controls the capitalization of text. */
+h1 {
+    text-transform: uppercase; /* Uppercase all letters */
+}
+h2 {
+    text-transform: lowercase; /* Lowercase all letters */
+}
+p {
+    text-transform: capitalize; /* Capitalize first letter of each word */
+}

@@ -1,0 +1,11 @@
+/* Line Height
+Controls the space between lines of text. Can be set using unitless values, percentages, or absolute units. */
+p {
+    line-height: 1.5; /* Unitless value */
+}
+h1 {
+    line-height: 1.2em; /* Relative to font-size */
+}
+body {
+    line-height: 150%; /* Percentage of font-size */
+}
