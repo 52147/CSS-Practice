@@ -1,10 +1,12 @@
 /* ### Flexbox Container Properties
 
 1. **display: flex;**
-   - This property enables Flexbox on the container. Without this, the container won't behave as a flex container. */
+   - This property enables Flexbox on the container. 
+   Without this, the container won't behave as a flex container. */
 
 /* 2. **flex-direction**
-   - Defines the direction in which the flex items are placed in the flex container. Possible values:
+   - Defines the direction in which the flex items are placed in the flex container. 
+   Possible values:
      - `row` (default): left to right in a horizontal direction.
      - `row-reverse`: right to left in a horizontal direction.
      - `column`: top to bottom in a vertical direction.
@@ -17,7 +19,8 @@
 
 
 /* 3. **flex-wrap**
-   - Specifies whether the flex items should wrap or not when they overflow the container. Possible values:
+   - Specifies whether the flex items should wrap or not when they overflow the container. 
+   Possible values:
      - `nowrap` (default): all flex items will be on one line.
      - `wrap`: flex items will wrap onto multiple lines from top to bottom.
      - `wrap-reverse`: flex items will wrap onto multiple lines from bottom to top.
@@ -28,7 +31,9 @@
      }
 
 /* 4. **justify-content**
-   - Defines how the browser distributes space between and around content items along the main axis. Possible values:
+   - Defines how the browser distributes space 
+     between and around content items along the main axis. 
+   Possible values:
      - `flex-start` (default): items are packed toward the start of the flex-direction.
      - `flex-end`: items are packed toward the end of the flex-direction.
      - `center`: items are centered along the main axis.
@@ -42,7 +47,8 @@
      }
 
 /* 5. **align-items**
-   - Defines the default behavior for how flex items are laid out along the cross axis. Possible values:
+   - Defines the default behavior for how flex items are laid out along the cross axis. 
+   Possible values:
      - `stretch` (default): stretch to fill the container.
      - `flex-start`: align items at the start of the cross axis.
      - `flex-end`: align items at the end of the cross axis.
@@ -56,7 +62,10 @@
 
 
 /* 6. **align-content**
-   - Aligns a flex container's lines within when there is extra space in the cross axis, similar to how `justify-content` aligns individual items within the main axis. This property has no effect when the flexbox has only one line. Possible values:
+   - Aligns a flex container's lines within when there is extra space in the cross axis, 
+   similar to how `justify-content` aligns individual items within the main axis. 
+   This property has no effect when the flexbox has only one line. 
+   Possible values:
      - `stretch` (default): stretch to fill the container.
      - `flex-start`: lines packed to the start of the flex container.
      - `flex-end`: lines packed to the end of the flex container.
